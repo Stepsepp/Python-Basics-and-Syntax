@@ -35,4 +35,4 @@ nimi = input("Sisesta oma nimi")
 length =len(nimi)  # length funktsioon annab objekti pikkuse või suuruse, sõltuvalt objektist.
 print(length)
 
-yes
+print("See töötab")
