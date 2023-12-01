@@ -36,3 +36,5 @@ length =len(nimi)  # length funktsioon annab objekti pikkuse või suuruse, sõlt
 print(length)
 
 print("See töötab")
+
+print("saab lisada asju")
