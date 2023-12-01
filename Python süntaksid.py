@@ -34,7 +34,3 @@ print(Linn)
 nimi = input("Sisesta oma nimi")
 length =len(nimi)  # length funktsioon annab objekti pikkuse või suuruse, sõltuvalt objektist.
 print(length)
-
-print("See töötab")
-
-print("saab lisada asju")
