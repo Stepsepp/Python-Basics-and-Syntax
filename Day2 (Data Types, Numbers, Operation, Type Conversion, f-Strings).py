@@ -51,13 +51,4 @@ isWinning = True
 print(f"your score is {score}, your height is {height}, you are winning is {isWinning}")
 
 
-# Proovime hakata kirjutama scripti mis annab sulle teada kui palju tipi sa pead teenindajale jätma kui soovite selle teatud inimeste vahel ära jagada.
-# Kui arve on 150 eur ja soovite selle jagada 5 inimese vahel, andes 12% tippi.
-# Iga inimene peaks maksma (150.00 / 5) * 1.12
 
-print("Tere tulemast arvutama tippi")
-arve = float(input("Mis on arve summa €"))
-tip = int(input("Kui palju tippi sa soovid anda ? 10,12, või 15?"))
-inimesed = int(input("Kui palju inimeste vahel tuleb jagada"))
-tippTuleksJätta = tip / 100 * arve + arve 
-print(tippTuleksJätta)
