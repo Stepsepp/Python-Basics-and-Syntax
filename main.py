@@ -1,24 +1,29 @@
-# Selleks et antud koodi käivitada eemalda trellid 3-11. ( Kui eemdalda trellid jälgi et kood oleks õiges reas)
+from turtle import Turtle, Screen
 
-#from  turtle import Turtle, Screen
-#timmy = Turtle()
-#print(timmy)
-#timmy.shape("turtle")
-#timmy.color("Red")
-#timmy.forward(300)
-#my_screen = Screen()
-#print(my_screen.canvheight)
-#my_screen.exitonclick()
+tim = Turtle()
+screen = Screen()
 
-
-
-# Selleks et antud koodi käivitada eemdalda # 18-23 ( Kui eemdalda trellid jälgi et kood oleks õiges reas)
-
-#from prettytable import PrettyTable
-#table = PrettyTable()
-#table.add_column("Eesti_linnad",["Tallinn", "Tartu", "Pärnu"])
-#table.add_column("Type", ["Pealinn", "Tudengite_Linn", "Suve_Pealinn"])
-#print(table.align)
-#print(table)
+def move_forwards():
+    tim.forward(10)
+def move_backwards():
+    tim.backward(10)
+def turn_left():
+    new_heading =  tim.heading() + 10
+    tim.setheading(new_heading)
+def turn_right():
+    new_heading =  tim.heading() - 10
+    tim.setheading(new_heading)
+def clear():
+    tim.clear()
+    tim.penup()
+    tim.home()
+    tim.pendown()
 
 
+screen.listen()
+screen.onkey(move_forwards, "w")
+screen.onkey(move_backwards, "s")
+screen.onkey(turn_left, "a")
+screen.onkey(turn_right, "d")
+screen.onkey(clear, "c")
+screen.exitonclick()
